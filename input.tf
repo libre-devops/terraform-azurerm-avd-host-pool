@@ -47,7 +47,7 @@ variable "max_session_allowed" {
 variable "preferred_app_group_type" {
   description = "Sets the preferred app group type for the host pool"
   type        = string
-  default     = "None"
+  default     = "Desktop"
 }
 
 variable "rg_name" {

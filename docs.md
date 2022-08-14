@@ -30,7 +30,7 @@ No modules.
 | <a name="input_lb_type"></a> [lb\_type](#input\_lb\_type) | Determines the load balancer type in the host pool, can only be BreadthFirst, DepthFirst or Persistent for Personal Pools | `string` | `"BreathFirst"` | no |
 | <a name="input_location"></a> [location](#input\_location) | The location for this resource to be put in | `string` | n/a | yes |
 | <a name="input_max_session_allowed"></a> [max\_session\_allowed](#input\_max\_session\_allowed) | Determines the amount of sessions allowed | `number` | `1` | no |
-| <a name="input_preferred_app_group_type"></a> [preferred\_app\_group\_type](#input\_preferred\_app\_group\_type) | Sets the preferred app group type for the host pool | `string` | `"None"` | no |
+| <a name="input_preferred_app_group_type"></a> [preferred\_app\_group\_type](#input\_preferred\_app\_group\_type) | Sets the preferred app group type for the host pool | `string` | `"Desktop"` | no |
 | <a name="input_rg_name"></a> [rg\_name](#input\_rg\_name) | The name of the resource group, this module does not create a resource group, it is expecting the value of a resource group already exists | `string` | n/a | yes |
 | <a name="input_start_vm_on_connect"></a> [start\_vm\_on\_connect](#input\_start\_vm\_on\_connect) | Enables or disables the VM start on connection feature, defaults to true | `bool` | `true` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | A map of the tags to use on the resources that are deployed with this module. | `map(string)` | <pre>{<br>  "source": "terraform"<br>}</pre> | no |
