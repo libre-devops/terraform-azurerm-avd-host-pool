@@ -44,5 +44,4 @@ No modules.
 | <a name="output_host_pool_id"></a> [host\_pool\_id](#output\_host\_pool\_id) | The ID of the host pool |
 | <a name="output_host_pool_location"></a> [host\_pool\_location](#output\_host\_pool\_location) | The location of the host pool |
 | <a name="output_host_pool_name"></a> [host\_pool\_name](#output\_host\_pool\_name) | The name of the host pool |
-| <a name="output_host_pool_registration_info"></a> [host\_pool\_registration\_info](#output\_host\_pool\_registration\_info) | The registration info of the host pool |
 | <a name="output_host_pool_rg_name"></a> [host\_pool\_rg\_name](#output\_host\_pool\_rg\_name) | The friendly name of the host pool |
