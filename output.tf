@@ -1,32 +1,29 @@
-output "sa_id" {
-  value       = azurerm_storage_account.sa.id
-  description = "The ID of the storage account"
+output "host_pool_friendly_name" {
+  value       = azurerm_virtual_desktop_host_pool.host_pool.friendly_name
+  description = "The friendly name of the host pool"
 }
 
-output "sa_name" {
-  value       = azurerm_storage_account.sa.name
-  description = "The name of the storage account"
+output "host_pool_id" {
+  value       = azurerm_virtual_desktop_host_pool.host_pool.id
+  description = "The ID of the host pool"
 }
 
-output "sa_primary_access_key" {
-  value       = azurerm_storage_account.sa.primary_access_key
-  description = "The primary access key of the storage account"
-  sensitive   = true
+output "host_pool_location" {
+  value       = azurerm_virtual_desktop_host_pool.host_pool.location
+  description = "The location of the host pool"
 }
 
-output "sa_primary_blob_endpoint" {
-  value       = azurerm_storage_account.sa.primary_blob_endpoint
-  description = "The primary blob endpoint of the storage account"
+output "host_pool_name" {
+  value       = azurerm_virtual_desktop_host_pool.host_pool.name
+  description = "The name of the host pool"
 }
 
-output "sa_primary_connection_string" {
-  value       = azurerm_storage_account.sa.primary_blob_connection_string
-  description = "The primary blob connection string of the storage account"
-  sensitive   = true
+output "host_pool_registration_info" {
+  value       = azurerm_virtual_desktop_host_pool.host_pool.registration_info
+  description = "The registration info of the host pool"
 }
 
-output "sa_secondary_access_key" {
-  value       = azurerm_storage_account.sa.secondary_access_key
-  description = "The secondary access key of the storage account"
-  sensitive   = true
+output "host_pool_rg_name" {
+  value       = azurerm_virtual_desktop_host_pool.host_pool.resource_group_name
+  description = "The friendly name of the host pool"
 }
