@@ -20,4 +20,5 @@ module "avd_host_pool" {
   host_pool_type          = "Personal"
   validate_environment    = true
   description             = "Test AVD instance"
+  max_session_allowed     = "1"
 }
