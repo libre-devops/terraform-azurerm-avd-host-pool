@@ -24,11 +24,9 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_custom_rdp_properties"></a> [custom\_rdp\_properties](#input\_custom\_rdp\_properties) | Passes custom rdp properties to the host pool if used | `string` | `null` | no |
 | <a name="input_description"></a> [description](#input\_description) | The description of the host pool | `string` | `null` | no |
-| <a name="input_host_pool"></a> [host\_pool](#input\_host\_pool) | The name of the host pool | `string` | n/a | yes |
 | <a name="input_host_pool_friendly_name"></a> [host\_pool\_friendly\_name](#input\_host\_pool\_friendly\_name) | The friendly name for your host pool | `string` | `null` | no |
+| <a name="input_host_pool_name"></a> [host\_pool\_name](#input\_host\_pool\_name) | The name of the host pool | `string` | n/a | yes |
 | <a name="input_host_pool_type"></a> [host\_pool\_type](#input\_host\_pool\_type) | Determines whether the VMs are part of a pool or are personal assigned, defaults to Personal | `string` | `"Personal"` | no |
-| <a name="input_identity_ids"></a> [identity\_ids](#input\_identity\_ids) | Specifies a list of user managed identity ids to be assigned to the VM. | `list(string)` | `[]` | no |
-| <a name="input_identity_type"></a> [identity\_type](#input\_identity\_type) | The Managed Service Identity Type of this Virtual Machine. | `string` | `""` | no |
 | <a name="input_lb_type"></a> [lb\_type](#input\_lb\_type) | Determines the load balancer type in the host pool, can only be BreadthFirst, DepthFirst or Persistent for Personal Pools | `string` | `"BreathFirst"` | no |
 | <a name="input_location"></a> [location](#input\_location) | The location for this resource to be put in | `string` | n/a | yes |
 | <a name="input_max_session_allowed"></a> [max\_session\_allowed](#input\_max\_session\_allowed) | Determines the amount of sessions allowed | `number` | `1` | no |

@@ -7,3 +7,13 @@ module "rg" {
 
   #  lock_level = "CanNotDelete" // Do not set this value to skip lock
 }
+
+module "avd_host_pool" {
+  source = "registry.terraform.io/libre-devops/avd-host-pool/azurerm"
+
+  location = module.rg.rg_location
+  rg_name  = module.rg.rg_name
+  tags     = module.rg.rg_tags
+
+  host_pool_name = "vdpool-${var.short}-${var.loc}-${terraform.workspace}-01"
+}

@@ -1,8 +1,7 @@
 resource "azurerm_virtual_desktop_host_pool" "host_pool" {
-  location            = var.location
-  resource_group_name = var.rg_name
-
-  name                     = var.host_pool
+  location                 = var.location
+  resource_group_name      = var.rg_name
+  name                     = var.host_pool_name
   friendly_name            = var.host_pool_friendly_name
   validate_environment     = var.validate_environment
   start_vm_on_connect      = var.start_vm_on_connect

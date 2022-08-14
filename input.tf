@@ -10,33 +10,21 @@ variable "description" {
   default     = null
 }
 
-variable "host_pool" {
-  description = "The name of the host pool"
-  type        = string
-}
-
 variable "host_pool_friendly_name" {
   description = "The friendly name for your host pool"
   type        = string
   default     = null
 }
 
+variable "host_pool_name" {
+  description = "The name of the host pool"
+  type        = string
+}
+
 variable "host_pool_type" {
   description = "Determines whether the VMs are part of a pool or are personal assigned, defaults to Personal"
   type        = string
   default     = "Personal"
-}
-
-variable "identity_ids" {
-  description = "Specifies a list of user managed identity ids to be assigned to the VM."
-  type        = list(string)
-  default     = []
-}
-
-variable "identity_type" {
-  description = "The Managed Service Identity Type of this Virtual Machine."
-  type        = string
-  default     = ""
 }
 
 variable "lb_type" {
