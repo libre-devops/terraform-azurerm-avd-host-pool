@@ -15,5 +15,9 @@ module "avd_host_pool" {
   rg_name  = module.rg.rg_name
   tags     = module.rg.rg_tags
 
-  host_pool_name = "vdpool-${var.short}-${var.loc}-${terraform.workspace}-01"
+  host_pool_name          = "vdpool-${var.short}-${var.loc}-${terraform.workspace}-01"
+  host_pool_friendly_name = "vdpool01"
+  host_pool_type          = "Personal"
+  validate_environment    = true
+  description             = "Test AVD instance"
 }
